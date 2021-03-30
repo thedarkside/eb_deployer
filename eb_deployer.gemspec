@@ -9,9 +9,9 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/ThoughtWorksStudios/eb_deployer"
   gem.license       = 'MIT'
 
-  gem.add_runtime_dependency 'aws-sdk-cloudformation',  '~> 1.4', '>= 1.4.0'
-  gem.add_runtime_dependency 'aws-sdk-elasticbeanstalk',  '~> 1.5', '~> 1.5.0'
-  gem.add_runtime_dependency 'aws-sdk-s3',  '~> 1', '~> 1.0.0'
+  gem.add_runtime_dependency 'aws-sdk-cloudformation',  '~> 1.46', '>= 1.46.0 '
+  gem.add_runtime_dependency 'aws-sdk-elasticbeanstalk',  '~> 1.40', '~> 1.40.0'
+  gem.add_runtime_dependency 'aws-sdk-s3',  '~> 1', '~> 1.85.0'
 
   gem.files         = `git ls-files`.split($\).reject {|f| f =~ /^samples\// }
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
